@@ -98,14 +98,14 @@ function checkForMatch() {
         alert("Sorry, pick two different cards.")   
     }
     else if (cardsChosen[0] === cardsChosen[1]) { //do they match?
-        alert("You found a match!") //like better without alerts
+        alert("You found a match!") 
         cards[optionOneId].removeEventListener('click', flipCard) //removes the ability to flip a white card
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
     } else {
         cards[optionOneId].setAttribute('src', 'images/memory.png') //return the card image back to the back
         cards[optionTwoId].setAttribute('src', 'images/memory.png')
-        alert("Sorry, try again.")
+        alert("Memorize the cards and try again.")
     }
     //clear arrays to choose again
     cardsChosen = [];
@@ -125,7 +125,7 @@ function flipCard() {
     cardsChosenId.push(cardId) //just push id
     this.setAttribute('src', cardsArray[cardId].img) //show the image for that id in the grid
     if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 1600) //timeout in milliseconds
+        setTimeout(checkForMatch, 650) //timeout in milliseconds
     }
 }
 
