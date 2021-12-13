@@ -98,14 +98,14 @@ function checkForMatch() {
         alert("Sorry, pick two different cards.")   
     }
     else if (cardsChosen[0] === cardsChosen[1]) { //do they match?
-        // alert("You found a match!") //like better without alerts
+        alert("You found a match!") //like better without alerts
         cards[optionOneId].removeEventListener('click', flipCard) //removes the ability to flip a white card
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
     } else {
         cards[optionOneId].setAttribute('src', 'images/memory.png') //return the card image back to the back
         cards[optionTwoId].setAttribute('src', 'images/memory.png')
-        // alert("Sorry, try again.")
+        alert("Sorry, try again.")
     }
     //clear arrays to choose again
     cardsChosen = [];
