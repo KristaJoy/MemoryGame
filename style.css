@@ -1,0 +1,21 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #025883;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #76797b;
+    font-size: 25px;
+}
